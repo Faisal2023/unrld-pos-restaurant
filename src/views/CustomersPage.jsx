@@ -49,7 +49,7 @@ export default function CustomersPage() {
   if(role == "admin") {
     isManageAllowed = true;
   } else {
-    if(userScopes.includes(SCOPES.CUSTOMERS) || userScopes.includes(SCOPES.MANAGE_CUSTOMERS)) {
+    if(userScopes?.includes(SCOPES.MANAGE_CUSTOMERS)) {
       isManageAllowed = true;
     }
   }
